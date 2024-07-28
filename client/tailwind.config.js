@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {   
+      colors: {
+      'primary-PSync': '#1F59DA', 
+    },
+      fontFamily: {
+      outfit: ['Outfit', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
