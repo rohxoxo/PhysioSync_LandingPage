@@ -21,34 +21,49 @@ function Navbar() {
 
   return (
     <div className="relative">
-      <div className="m-6 flex justify-between items-center self-stretch">
-        <img src={Logo} alt="Logo" />
-        <img src={menubar} alt="Menu" className="cursor-pointer" onClick={toggleMenu} />
+      {/* Desktop Navigation */}
+      <nav className="hidden md:flex justify-between items-center bg-gray-100 p-4">
+        <img src={Logo} alt="Logo" className="w-32" />
+        <ul className="flex space-x-8 text-lg">
+          <li>Menu Item 1</li>
+          <li>Menu Item 2</li>
+          <li>Menu Item 3</li>
+          <li>Menu Item 4</li>
+        </ul>
+      </nav>
+
+      {/* Mobile Menu Button */}
+      <div className="m-4 flex justify-between items-center md:hidden">
+        <img src={Logo} alt="Logo" className="w-24" />
+        <img
+          src={menubar}
+          alt="Menu"
+          className="cursor-pointer w-8"
+          onClick={toggleMenu}
+        />
       </div>
 
+      {/* Mobile Menu Modal */}
       <Modal
         isOpen={isMenuOpen}
         onRequestClose={toggleMenu}
-        className="fixed inset-0 flex justify-center items-center"
-        overlayClassName="fixed inset-0 bg-opacity-75 bg-black z-50"
-        style={{ overlay: { zIndex: 50 } }}
+        className="fixed inset-0 flex justify-center items-center z-50"
+        overlayClassName="fixed inset-0 bg-opacity-75 bg-black"
       >
-        {isMenuOpen && ( 
-          <animated.div
-            style={slideIn}
-            className="w-full h-full text-white flex flex-col justify-center items-center"
-          >
-            <button className="absolute top-4 right-4 text-2xl" onClick={toggleMenu}>
-              &times;
-            </button>
-            <ul className="space-y-4 text-xl">
-              <li>Menu Item 1</li>
-              <li>Menu Item 2</li>
-              <li>Menu Item 3</li>
-              <li>Menu Item 4</li>
-            </ul>
-          </animated.div>
-        )}
+        <animated.div
+          style={slideIn}
+          className="w-full h-full text-white flex flex-col justify-center items-center bg-gray-800"
+        >
+          <button className="absolute top-4 right-4 text-2xl" onClick={toggleMenu}>
+            &times;
+          </button>
+          <ul className="space-y-4 text-xl">
+            <li>Menu Item 1</li>
+            <li>Menu Item 2</li>
+            <li>Menu Item 3</li>
+            <li>Menu Item 4</li>
+          </ul>
+        </animated.div>
       </Modal>
     </div>
   );
