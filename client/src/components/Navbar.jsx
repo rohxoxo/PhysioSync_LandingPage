@@ -25,10 +25,10 @@ function Navbar() {
       <nav className="hidden md:flex justify-between items-center bg-gray-100 p-4">
         <img src={Logo} alt="Logo" className="w-32" />
         <ul className="flex space-x-8 text-lg">
-          <li>Menu Item 1</li>
-          <li>Menu Item 2</li>
-          <li>Menu Item 3</li>
-          <li>Menu Item 4</li>
+        <li><a href="#home"> Home </a> </li>
+            <li><a href="#features">Features </a></li>
+            <li><a href="#team">Team </a></li>
+            <li><a href="#proposal">Proposal </a></li>
         </ul>
       </nav>
 
@@ -58,10 +58,10 @@ function Navbar() {
             &times;
           </button>
           <ul className="space-y-4 text-xl">
-            <li>Menu Item 1</li>
-            <li>Menu Item 2</li>
-            <li>Menu Item 3</li>
-            <li>Menu Item 4</li>
+            <li><a href="#home"> Home </a> </li>
+            <li><a href="#features">Features </a></li>
+            <li><a href="#team">Team </a></li>
+            <li><a href="#proposal">Proposal </a></li>
           </ul>
         </animated.div>
       </Modal>

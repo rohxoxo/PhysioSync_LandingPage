@@ -10,51 +10,52 @@ import Sanika from '../assets/Sanika.svg';
 const teamData = [
   {
     img: Sanjeev, 
-    name: 'John Doe',
+    name: 'Sanjeev Mehta',
     title: 'iOS/Full Stack Developer',
-    linkedin: 'https://www.linkedin.com/in/johndoe'
+    linkedin: 'https://www.linkedin.com/in/sanjeev-mehta-ios/'
   },
   {
     img: Gurmeet,
-    name: 'Jane Smith',
+    name: 'Gurmeet Singh',
     title: 'iOS/Full Stack Developer',
-    linkedin: 'https://www.linkedin.com/in/janesmith'
+    linkedin: 'https://www.linkedin.com/in/gurmeet--singh/'
   },
   {
     img: Rohit,
-    name: 'Emily Johnson',
+    name: 'Rohit Kumar',
     title: 'iOS/Full Stack Developer',
-    linkedin: 'https://www.linkedin.com/in/emilyjohnson'
+    linkedin: 'https://www.linkedin.com/in/rohit0205/'
   },
   {
     img: Jassi,
-    name: 'Michael Brown',
-    title: 'Marketing Director',
-    linkedin: 'https://www.linkedin.com/in/michaelbrown'
+    name: 'Jaspreet Singh',
+    title: 'UI/UX Designer',
+    linkedin: 'https://www.linkedin.com/in/jaspreetdesign/'
   },
   {
     img: Harsimran,
-    name: 'Linda Davis',
-    title: 'Chief Operating Officer',
-    linkedin: 'https://www.linkedin.com/in/lindadavis'
+    name: 'Harsimran Singh',
+    title: 'UI/UX Designer',
+    linkedin: 'https://www.linkedin.com/in/harsimransingharora/'
   },
   {
     img: Upkar,
-    name: 'Robert Wilson',
-    title: 'Product Manager',
-    linkedin: 'https://www.linkedin.com/in/robertwilson'
+    name: 'Upkar Singh',
+    title: 'UI/UX Designer',
+    linkedin: 'https://www.linkedin.com/in/upkarsinghdesign/'
   },
   {
     img: Sanika,
-    name: 'Sarah White',
-    title: 'Senior Developer',
-    linkedin: 'https://www.linkedin.com/in/sarahwhite'
+    name: 'Sanika Coutinho',
+    title: 'UI/UX Designer',
+    linkedin: 'https://www.linkedin.com/in/sanika-coutinho/'
   },
 ];
 
 const MeetOurTeamPage = () => {
     return (
         <div className="flex flex-col items-center bg-white p-4 md:p-8 lg:p-12">
+          <section id ="team" >
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-center">Meet Our Team</h1>
           <p className="text-lg md:text-xl lg:text-2xl font-medium mb-6 text-center">Innovative. Strategic. Passionate.</p>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8">
@@ -99,6 +100,7 @@ const MeetOurTeamPage = () => {
               </div>
             ))}
           </div>
+          </section>
         </div>
     );
 };
